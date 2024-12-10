@@ -25,8 +25,8 @@ const isPalindrome = function(str) {
 
 const largestPair = function(array) {
   // Function Body
-  let largestNum = 0;
-  for (let n = 0; n < array.length; n++) {
+  let largestNum = -Infinity;
+  for (let n = 0; n < array.length -1; n++) {
     
     const element = (array[n] + (array[n + 1]));
     if (element > largestNum) {
