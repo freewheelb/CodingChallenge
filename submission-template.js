@@ -28,7 +28,7 @@ const largestPair = function(array) {
   let largestNum = -Infinity;
   for (let n = 0; n < array.length -1; n++) {
     
-    const element = (array[n] + (array[n + 1]));
+    const element = (array[n] * (array[n + 1]));
     if (element > largestNum) {
       largestNum = element;
     }
